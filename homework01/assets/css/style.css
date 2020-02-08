@@ -21,8 +21,8 @@ h1 {
     font-size: 48px;
 }
 
-.seo {
-    color: #d9dcd6;
+.dot {
+    color: #ffeb09;;
 }
 
 .header div {
@@ -48,11 +48,11 @@ a {
 }
 
 a:hover {
-    color: #CCCCCC;
+    color: #ffeb09;
 } 
 
 p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .hero {
@@ -99,6 +99,7 @@ p {
 .benefit-point h3 {
     margin-bottom: 10px;
     text-align: center;
+    color: #ffeb09;
 }
 
 .benefit-point img {
@@ -123,6 +124,7 @@ p {
 .services h2 {
     margin-bottom: 20px;
     font-size: 36px;
+    color: #ffeb09;
 }
 
 .footer {
