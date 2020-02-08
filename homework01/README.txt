@@ -9,9 +9,11 @@ I did the following:
 -- Changed Header Text & Link Hover Color for Easy Visibility
 -- Inserted Meta Tags
 
-2. CSS CONSOLIDATION
+2. CSS CONSOLIDATION & HTML REFINING
 -- Consolidated multple CSS classes into one class when possible
+-- Utilized ID's and Classes to shorten CSS and create more organization in HTML
 
 3. OVERALL CODE CLEANUP & SHORTENING 
+-- Ensured proper spacing and indenting of code
 
 4. IMPLEMENTED CSS BOOTSTRAP

@@ -102,7 +102,7 @@ p {
     color: #ffeb09;
 }
 
-.benefit-point img {
+#benefits {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -117,7 +117,7 @@ p {
     color: #ffffff;
 }
 
-.services img {
+#services {
     max-height: 200px;
 }
 
