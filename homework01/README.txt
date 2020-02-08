@@ -4,7 +4,7 @@ I did the following:
 
 1. ACCESSIBILITY REVISION
 -- Added a concise, descriptive page title
--- Increased Font Size for easy readability
+-- Increased <p> Font Size for easy readability
 -- Inserted alt tags for images in case images don't load properly
 -- Changed Header Text & Link Hover Color for Easy Visibility
 -- Inserted Meta Tags
