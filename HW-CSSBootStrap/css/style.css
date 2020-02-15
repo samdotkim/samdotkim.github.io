@@ -1,0 +1,74 @@
+.wrapper{
+    position: absolute;
+    background-color: #502C73;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-animation-name: backgroundcolor; 
+    -webkit-animation-duration: 3s;
+    animation-name: backgroundcolor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+.main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.jumbotron{
+    height: 400px;
+}
+
+.jumbotron h1 {
+    color:#202020;
+}
+
+section{
+    padding: 40px;
+}
+
+h1{
+    color:#fff262;
+}
+
+.content{
+    width: 100%;
+    padding: 20px;
+    background: #202020;
+    color: #FFF;
+}
+
+#bottom-space{
+    margin-bottom: 20px;
+}
+
+footer{
+    background: #f8f9fa;
+    width: 100%;
+    margin-top: 30px;
+    padding: 12px;
+    text-align: center;
+}
+
+@keyframes backgroundcolor {
+    33% {background-color: #800040;}
+    66% {background-color: #2A4D6E ;}
+    99% {background-color: #502C73;}
+}
+  
+@-webkit-keyframes backgroundcolor {
+    33% {background-color: #800040;}
+    66% {background-color: #2A4D6E ;}
+    99% {background-color: #502C73;}
+}
+
+@media screen and (max-width: 480px) {
+    .main{
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+  }
