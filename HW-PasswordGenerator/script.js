@@ -21,7 +21,7 @@ generate.addEventListener('click', () => {
 	var hasSymbol = symbolsEl.checked;
   resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 // 3. PASSWORD LENGTH ALERTS  
-  if(length<8){
+  if(length < 8){
     alert("ERROR: You need more characters!")
   }
   else if(length > 128){
