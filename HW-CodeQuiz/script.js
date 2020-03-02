@@ -1,7 +1,7 @@
 var questions = [{
     question: "1. What is javascript?",
     choices: ["The language that coffee speaks", "A client-side scripting language", "A coding language used for styling websites", "An old wooden boat"],
-    correctAnswer: 3
+    correctAnswer: 2
 }, {
     question: "2. How to empty an array in JavaScript?",
     choices: ["arrayList[]", "arrayList(0)", "arrayList.length=0", "arrayList.len(0)"],
@@ -47,7 +47,11 @@ var correctAnswers = 0;
 var quizOver = false;
 var iSelectedAnswer = [];
 	var c=180;
-	var t;
+    var t;
+    
+var penalty = funtion{
+    
+}    
 $(document).ready(function () 
 {
     // Display the first question
