@@ -49,9 +49,6 @@ var iSelectedAnswer = [];
 	var c=180;
     var t;
     
-var penalty = funtion{
-    
-}    
 $(document).ready(function () 
 {
     // Display the first question
