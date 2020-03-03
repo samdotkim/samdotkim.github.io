@@ -1,29 +1,30 @@
+// ??? THE QUESTIONS ???
 var questions = [{
-    question: "1. What is javascript?",
+    question: "1. What is Javascript?",
     choices: ["The language that coffee speaks", "A client-side scripting language", "A coding language used for styling websites", "An old wooden boat"],
-    correctAnswer: 2
-}, {
-    question: "2. How to empty an array in JavaScript?",
-    choices: ["arrayList[]", "arrayList(0)", "arrayList.length=0", "arrayList.len(0)"],
-    correctAnswer: 2
-}, {
-    question: "3. What function to add an element at the begining of an array and one at the end?",
-    choices: ["push,unshift", "unshift,push", "first,push", "unshift,last"],
     correctAnswer: 1
+}, {
+    question: "2. What is the index value of 4 in the array [1,3,4,2] ?",
+    choices: ["0", "3", "2", "1"],
+    correctAnswer: 2
+}, {
+    question: "3. What are parentheses () used for in Javascript?",
+    choices: ["variables", "your mother", "attributes", "functions"],
+    correctAnswer: 3
 }, {
     question: "4. What will this output? var a = [1, 2, 3]; console.log(a[6]);",
     choices: ["undefined", "0", "prints nothing", "Syntax error"],
     correctAnswer: 0
 }, {
-    question: "5. What would following code return? console.log(typeof typeof 1);",
-    choices: ["string", "number", "Syntax error", "undefined"],
-    correctAnswer: 0
+    question: "5. What would happen if you put alert('ERROR!); into your Javascript?",
+    choices: ["nothing", "Your browser would crash", "Syntax error", "A window would pop up that said ERROR!"],
+    correctAnswer: 3
 },{
 	question: "6. Which software company developed JavaScript?",
     choices: ["Mozilla", "Netscape", "Sun Microsystems", "Oracle"],
     correctAnswer: 1
 },{
-	question: "7. What would be the result of 3+2+'7'?",
+	question: "7. What would be the result of 2 + 3 +'7'?",
     choices: ["327", "12", "14", "57"],
     correctAnswer: 3
 },{
@@ -31,15 +32,14 @@ var questions = [{
     choices: ["The first div element", "The last div element", "All div elements", "Current div element"],
     correctAnswer: 2
 },{
-	question: "9. How can a value be appended to an array?",
-    choices: ["arr(length).value;", "arr[arr.length]=value;", "arr[]=add(value);", "None of these"],
+	question: "9. What is jQuery?",
+    choices: ["a Javascript command", "a Javascript library", "a Javascript function", "None of the above"],
     correctAnswer: 1
 },{
 	question: "10. What will the code below output to the console? console.log(1 +  +'2' + '2');",
     choices: ["'32'", "'122'", "'13'", "'14'"],
     correctAnswer: 0
 }];
-
 
 var currentQuestion = 0;
 var viewingAns = 0;
@@ -48,13 +48,16 @@ var quizOver = false;
 var iSelectedAnswer = [];
 	var c=180;
     var t;
+var wrongAnswer = false;
     
 $(document).ready(function () 
 {
+
+
+
     // Display the first question
     displayCurrentQuestion();
     $(this).find(".quizMessage").hide();
-    $(this).find(".preButton").attr('disabled', 'disabled');
 	
 	timedCount();
 	
@@ -307,3 +310,8 @@ function viewResults()
 			viewResults();
 		},3000);
 }
+
+//function saveScore (
+//    name = prompt('Enter your intials')
+//    localStorage.setItem('name')
+//

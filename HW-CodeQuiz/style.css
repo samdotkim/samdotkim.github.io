@@ -1,12 +1,16 @@
+body {
+  background-color: #470C7B;
+}
+
 h1 {
-    font-family:'Gabriola', serif;
+    font-family:'verdana', serif;
     text-align: center;
 }
 ul {
     list-style: none;
 }
 li {
-    font-family:'Cambria', serif;
+    font-family:'verdana', serif;
     font-size: 1.5em;
 }
 input[type=radio] {
@@ -15,18 +19,15 @@ input[type=radio] {
     height: 2em;
 }
 p {
-    font-family:'Gabriola', serif;
+    font-family:'verdana', serif;
 }
 /* Quiz Classes */
  .quizContainer {
-    background-color: white;
-    border-radius: 6px;
+    background-color: #F4E576;
+    border-radius: 80px;
     width: 75%;
     margin: auto;
     padding-top: 5px;
-    /*-moz-box-shadow: 10px 10px 5px #888;
-    -webkit-box-shadow: 10px 10px 5px #888;
-    box-shadow: 10px 10px 5px #888;*/
     position: relative;
 }
 .quizcontainer #quiz1
@@ -35,45 +36,24 @@ text-shadow:1px 1px 2px orange;
 font-family:"Georgia", Arial, sans-serif;
 }
 .nextButton {
-    box-shadow: 3px 3px 5px #888;
-    border-radius: 6px;
-   /* width: 150px;*/
-    height: 40px;
+    border-radius: 30px;
     text-align: center;
-    background-color: lightgrey;
+    background-color: green;
     /*clear: both;*/
-    color: red;
-    font-family:'Gabriola', serif;
+    color: white;
+    font-family:'verdana', serif;
     position: relative;
+    padding: 30px;
     margin: auto;
 	font-size:25px;
 	font-weight:bold;
-    padding-top: 5px;
 	float:right;
-	right:30%;
+	right: 30%;
 }
 
-.preButton {
-    box-shadow: 3px 3px 5px #888;
-    border-radius: 6px;
-    /*width: 150px;*/
-    height: 40px;
-    text-align: center;
-    background-color: lightgrey;
-    /*clear: both;*/
-    color: red;
-    font-family:'Gabriola', serif;
-    position: relative;
-    margin: auto;
-	font-size:25px;
-	font-weight:bold;
-    padding-top: 5px;
-	float:left;
-	left:30%;
-}
 
 .question {
-    font-family:'Century', serif;
+    font-family:'verdana', serif;
     font-size: 1.5em;
 	font-weight:bold;
     width: 100%;
@@ -84,7 +64,7 @@ font-family:"Georgia", Arial, sans-serif;
     text-align: center;
 }
 .quizMessage {
-    background-color: peachpuff;
+    background-color: red;
     border-radius: 6px;
     width: 20%;
     margin: auto;
@@ -100,7 +80,7 @@ font-family:"Georgia", Arial, sans-serif;
 }
 .choiceList {
     font-family: 'Arial', serif;
-    color: #ed12cd;
+    color: #000;
 	font-size:15px;
 	font-weight:bold;
 }
