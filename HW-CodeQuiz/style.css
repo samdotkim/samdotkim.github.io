@@ -2,6 +2,10 @@ body {
   background-color: #470C7B;
 }
 
+img {
+    margin: 10px;
+}
+
 .center {
     margin: 0;
     position: absolute;
@@ -12,63 +16,74 @@ body {
   }
 
 h1 {
-    font-family:'verdana', serif;
+    font-family: 'Spartan', sans-serif;
     text-align: center;
+    font-weight: 900;
 }
 ul {
     list-style: none;
 }
 li {
-    font-family:'verdana', serif;
-    font-size: 1.5em;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    margin: 8px;
 }
 input[type=radio] {
-    border: 0px;
+    border: 2px;
+    border-color: black;
     width: 20px;
-    height: 2em;
+    height: 1em;
 }
 p {
-    font-family:'verdana', serif;
+    font-family: 'Spartan', sans-serif;
 }
+
+/* Timer */
+
+.timer {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: red;
+    padding: 14px;
+    margin-bottom: 10px;
+}
+
 /* Quiz Classes */
  .quizContainer {
     background-color: #F4E576;
     border-radius: 40px;
-    width: 75%;
+    width: 80%;
+    padding: 30px;
 }
-.quizcontainer #quiz1
-{
-text-shadow:1px 1px 2px orange;
-font-family:"Georgia", Arial, sans-serif;
-}
+
 .nextButton {
     border-radius: 43px;
-    width:100%;
+    width:40%;
     text-align: center;
     background-color: green;
     color: white;
     font-family:'verdana', serif;
     position: relative;
-    padding: 20px;
+    padding: 14px;
     margin: auto;
 	font-size:25px;
-	font-weight:bold;
-
+    font-weight:bold;
+    margin-left: 30%;
 }
-
 
 .question {
     color: white;
-    font-family:'verdana', serif;
+    font-family: 'Spartan', sans-serif;
     font-size: 1.5em;
 	font-weight:bold;
-    width: 100%;
+    width: 70%;
     height: auto;
     margin: auto;
-    padding: 20px;
-    border-radius: 6px;
-    background-color: black;
-    text-align: center;
+    padding: 14px;
+    padding-left: 30px;
+    background-color: #1A1FC2;
 }
 .quizMessage {
     background-color: red;
@@ -79,17 +94,21 @@ font-family:"Georgia", Arial, sans-serif;
     padding: 5px;
 	font-size:20px;
 	font-weight:bold;
-    font-family:'Gabriola', serif;
-    color: red;
+    font-family: 'Spartan', sans-serif;
+    color: white;
 	position:absolute;
-	top:80%;
+	top:50%;
 	left:40%;
 }
 .choiceList {
-    font-family: 'Arial', serif;
+    font-family: 'Spartan', sans-serif;
+    background-color: white;
     color: #000;
-	font-size:15px;
-	font-weight:bold;
+    font-size:12px;
+    padding: 20px;
+    width: 70%;
+    margin-left: 15%;
+	
 }
 .result {
     width: 40%;

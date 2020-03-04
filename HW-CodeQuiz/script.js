@@ -1,3 +1,12 @@
+var currentQuestion = 0;
+var viewingAns = 0;
+var correctAnswers = 0;
+var quizOver = false;
+var iSelectedAnswer = [];
+	var c=180;
+    var t;
+var wrongAnswer = false;
+
 // ??? THE QUESTIONS ???
 var questions = [{
     question: "1. What is Javascript?",
@@ -41,14 +50,6 @@ var questions = [{
     correctAnswer: 0
 }];
 
-var currentQuestion = 0;
-var viewingAns = 0;
-var correctAnswers = 0;
-var quizOver = false;
-var iSelectedAnswer = [];
-	var c=180;
-    var t;
-var wrongAnswer = false;
     
 $(document).ready(function () 
 {
