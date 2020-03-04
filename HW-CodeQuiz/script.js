@@ -1,9 +1,10 @@
+// DEFINE DOM ELEMENTS
 var currentQuestion = 0;
 var viewingAns = 0;
 var correctAnswers = 0;
 var quizOver = false;
 var iSelectedAnswer = [];
-	var c=180;
+	var c=60;
     var t;
 var wrongAnswer = false;
 
@@ -53,9 +54,6 @@ var questions = [{
     
 $(document).ready(function () 
 {
-
-
-
     // Display the first question
     displayCurrentQuestion();
     $(this).find(".quizMessage").hide();
@@ -72,12 +70,10 @@ $(document).ready(function ()
 			if(currentQuestion == 1) {
 			  $(".preButton").attr('disabled', 'disabled');
 			}
-			
 				currentQuestion--; // Since we have already displayed the first question on DOM ready
 				if (currentQuestion < questions.length) 
 				{
 					displayCurrentQuestion();
-					
 				} 					
 		} else {
 			if(viewingAns == 3) { return false; }
@@ -126,7 +122,7 @@ $(document).ready(function ()
 					$('#timer').html("You scored: " + correctAnswers + " out of: " + questions.length);
 					c=185;
 					$(document).find(".preButton").text("View Answer");
-					$(document).find(".nextButton").text("Play Again?");
+					$(document).find(".nextButton").text("SUBMIT SCORE");
 					quizOver = true;
 					return false;
 					
@@ -152,7 +148,7 @@ $(document).ready(function ()
 
 function timedCount()
 	{
-		if(c == 185) 
+		if(c == 85) 
 		{ 
 			return false; 
 		}
@@ -175,42 +171,7 @@ function timedCount()
 					return false;
 					
 		}
-		
-		/*if(c == 0 )
-		{	
-			if (!quizOver) 
-			{
-				var val = $("input[type='radio']:checked").val();
-            	if (val == questions[currentQuestion].correctAnswer) 
-				{
-					correctAnswers++;
-				}
-				currentQuestion++; // Since we have already displayed the first question on DOM ready
-				
-				if (currentQuestion < questions.length) 
-				{
-					displayCurrentQuestion();
-					c=15;
-				} 
-				else 
-				{
-					displayScore();
-					$('#timer').html('');
-					c=16;
-					$(document).find(".nextButton").text("Play Again?");
-					quizOver = true;
-					return false;
-				}
-			}
-			else 
-			{ // quiz is over and clicked the next button (which now displays 'Play Again?'
-				quizOver = false;
-				$(document).find(".nextButton").text("Next Question");
-				resetQuiz();
-				displayCurrentQuestion();
-				hideScore();
-			}		
-		}	*/
+
 		c = c - 1;
 		t = setTimeout(function()
 		{
@@ -222,8 +183,7 @@ function timedCount()
 // This displays the current question AND the choices
 function displayCurrentQuestion() 
 {
-
-	if(c == 185) { c = 180; timedCount(); }
+	if(c == 125) { c = 120; timedCount(); }
     //console.log("In display current Question");
     var question = questions[currentQuestion].question;
     var questionClass = $(document).find(".quizContainer > .question");
